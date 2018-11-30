@@ -1,34 +1,46 @@
 /* General */
+
 body {
   font-family: 'Cabin', sans-serif;
   overflow-x: hidden;
 }
 
 /* Navbar */
-.navbar {
+
+.nav {
   position: fixed;
   top: 0;
-  width: 100%;
-  background-color: rgba(39, 41, 44, 0.5);
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.nav-link,
-.navbar-brand {
+.nav-img {
+  height: 6.5vh;
+  width: auto;
   color: rgba(255, 255, 255, 0.8);
+  transition: all .3s;
 }
 
-.nav-link:hover,
-.navbar-brand:hover {
+.nav-img:hover {
   color: white;
+  cursor: pointer;
 }
 
-.navbar-brand {
-  padding: 0;
-  margin: 0;
+.nav-menu {
+  color: white;
+  margin-right: 5px;
 }
 
-.navbar-brand img {
-  height: 40px;
+.nav-menu a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all .3s;
+}
+
+.nav-menu a:hover {
+  color: white;
 }
 
 /* Hero */
@@ -45,7 +57,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 4;
 }
 
 .hero-header {
