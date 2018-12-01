@@ -50,7 +50,7 @@
       <h1 class="featured-header text-center my-5">
         Top Properties
       </h1>
-      <div class="row card-row my-4">
+      <div class="row card-row card-row-1 my-4">
         
         <div class="featured-card mx-3">
           <img src="https://images.unsplash.com/photo-1520608421741-68228b76b6df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=393fcadf2e10144e50dd093172240956&auto=format&fit=crop&w=1834&q=80" alt="Featured Property" class="featured-card-img">
@@ -64,17 +64,17 @@
         <div class="featured-card mx-3">
           <img src="https://images.unsplash.com/photo-1518733057094-95b53143d2a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cea1c1f5cfaee3e93a091eb7c24085ea&auto=format&fit=crop&w=1815&q=80" alt="Featured Property" class="featured-card-img">
         </div>
-        <a class="arrow-link arrow-link-left" onclick="scroll-left()">
+        <a class="arrow-link arrow-link-left" onclick="leftScrollOne()">
           <i class="fas fa-chevron-circle-left fa-3x arrow-left"></i>
         </a>
-        <a class="arrow-link arrow-link-right" onclick="scroll-right()">
+        <a class="arrow-link arrow-link-right" onclick="rightScrollOne()">
           <i class="fas fa-chevron-circle-right fa-3x arrow-right"></i>
         </a>
       </div>
       <h1 class="featured-header text-center my-5">
         Top Agents
       </h1>
-      <div class="row card-row my-4">
+      <div class="row card-row card-row-2 my-4">
         <div class="featured-card mx-3">
           <img src="https://images.unsplash.com/photo-1535441577682-5a7bc0702a7d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=077e17fb017e1258f3d5d3709729640a&auto=format&fit=crop&w=634&q=80" alt="Featured Agent" class="featured-card-img">
         </div>
@@ -87,10 +87,10 @@
         <div class="featured-card mx-3">
           <img src="https://images.unsplash.com/photo-1530512374037-9113969ab4d2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c2d702c3f879758516209772e61f8cc8&auto=format&fit=crop&w=634&q=80" alt="Featured Agent" class="featured-card-img">
         </div>
-        <a class="arrow-link arrow-link-left" onclick="scroll-left()">
+        <a class="arrow-link arrow-link-left" onclick="leftScroll2()">
           <i class="fas fa-chevron-circle-left fa-3x arrow-left"></i>
         </a>
-        <a class="arrow-link arrow-link-right" onclick="scroll-right()">
+        <a class="arrow-link arrow-link-right" onclick="rightScroll2()">
           <i class="fas fa-chevron-circle-right fa-3x arrow-right"></i>
         </a>
       </div>
@@ -103,6 +103,7 @@
   crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="scripts.js"></script>
 <script>
   AOS.init();
 </script>

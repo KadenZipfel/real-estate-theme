@@ -76,7 +76,7 @@ body {
 
 .featured {
   min-height: 90vh;
-  padding-left: 2rem;
+  padding: 0 2rem;
 }
 
 .featured-header {
@@ -89,6 +89,7 @@ body {
   flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
 }
 
 .card-row::-webkit-scrollbar {
@@ -186,6 +187,12 @@ body {
   }
 
   .featured-card {
-    width: 80vw;
+    width: 66vw;
+  }
+
+  .arrow-link, 
+  .arrow-right,
+  .arrow-left {
+    visibility: hidden;
   }
 }
