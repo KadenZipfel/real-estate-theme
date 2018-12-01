@@ -16,7 +16,9 @@
   <!-- Navbar -->
   <nav class="nav pl-3 pr-4">
     <div class="nav-brand">
-      <img src="/img/logo.png" alt="Logo" class="nav-img">
+      <a href="#">
+        <img src="/img/logo.png" alt="Logo" class="nav-img">
+      </a>
     </div>
     <div class="nav-menu">
       <a href="#">
@@ -30,8 +32,8 @@
     <h1 class="hero-header">
       Find Your Dream Home
     </h1>
-    <div class="row">
-      <div class="input-group mb-3">
+    <div class="row mt-3">
+      <div class="input-group mb-3 search-form">
         <input type="text" class="form-control" placeholder="Enter a location..." aria-label="Enter a location..." aria-describedby="location-search">
         <div class="input-group-append">
           <button class="btn btn-outline-light" type="button" id="location-search">
@@ -41,6 +43,38 @@
       </div>   
     </div>
   </section>
+
+  <!-- Featured Properties -->
+  <div class="container-fluid">
+    <section class="featured">
+      <h1 class="featured-header text-center my-5">
+        Featured Properties
+      </h1>
+      <div class="row card-row my-4">
+        <div class="card mx-3">
+          <img src="https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=91b874ce453385d8867cc98ee582fee3&auto=format&fit=crop&w=1655&q=80" alt="Featured Property" class="card-img-top">
+          <div class="card-body">
+            <p class="card-title">$1,939,000</p>
+            <p class="card-text text-right">New York, NY</p>
+          </div>
+        </div>
+        <div class="card mx-3">
+          <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4d2529242e0b4fadad755467e572682a&auto=format&fit=crop&w=1055&q=80" alt="Featured Property" class="card-img-top">
+          <div class="card-body">
+            <p class="card-title">$2,879,000</p>
+            <p class="card-text text-right">Vancouver, BC</p>
+          </div>
+        </div>
+        <div class="card mx-3">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0cf4ef4cb623c8a52b1a624f76eaf5bf&auto=format&fit=crop&w=1650&q=80" alt="Featured Property" class="card-img-top">
+          <div class="card-body">
+            <p class="card-title">$4,349,000</p>
+            <p class="card-text text-right">Los Angeles, CA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"

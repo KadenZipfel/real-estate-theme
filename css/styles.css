@@ -22,6 +22,7 @@ body {
   width: auto;
   color: rgba(255, 255, 255, 0.8);
   transition: all .3s;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
 }
 
 .nav-img:hover {
@@ -32,6 +33,7 @@ body {
 .nav-menu {
   color: white;
   margin-right: 5px;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
 }
 
 .nav-menu a {
@@ -66,22 +68,69 @@ body {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
 }
 
-.hero-button {
-  border-radius: 5px;
-  border: none;
-  background-color: white;
-  overflow: hidden;
-  transition: all .2s;
+.search-form {
+  width: 33vw;
 }
 
-.hero-button:hover {
-  background-color: white;
-  cursor: pointer;
-  transform: translateY(-2px);
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+/* Featured Properties */
+
+.featured {
+  height: 90vh;
 }
 
-.hero-button:active,
-.hero-button:focus {
-  outline: none;
+.featured-header {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card-row::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  width: 40vw;
+  flex: 0 0 auto;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.card-text {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+
+@media(max-width: 1200px) {
+  .hero {
+    background-image: url('https://images.unsplash.com/photo-1518733057094-95b53143d2a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cea1c1f5cfaee3e93a091eb7c24085ea&auto=format&fit=crop&w=1815&q=80');
+    background-size: 150%;
+  }
+
+  .hero-header {
+    font-size: 3rem;
+    margin: 1rem;
+    text-align: center;
+  }
+
+  .search-form {
+    width: 90vw;
+  }
+
+  .featured-header {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 80vw;
+  }
 }
