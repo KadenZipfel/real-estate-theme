@@ -164,6 +164,15 @@ body {
 .featured-card-price {
   text-align: center;
   font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18%;
+}
+
+.featured-card-price button {
+  width: 50%;
+  align-self: center;
 }
 
 .featured-card-details {
