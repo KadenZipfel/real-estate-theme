@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Real Estate Theme</title>
   <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,700" rel="stylesheet">
@@ -15,25 +15,25 @@
   
   <!-- Navbar -->
   <nav class="nav pl-3 pr-4">
-    <div class="nav-brand">
+    <div class="nav-brand" data-aos="fade-in" data-aos-duration="1000">
       <a href="#">
         <img src="/img/logo.png" alt="Logo" class="nav-img">
       </a>
     </div>
     <div class="nav-menu">
       <a href="#">
-        <i class="fas fa-bars fa-2x"></i>
+        <i class="fas fa-bars fa-2x" data-aos="fade-in" data-aos-duration="1000"></i>
       </a>
     </div>
   </nav>
 
   <!-- Hero -->
   <section class="hero">
-    <h1 class="hero-header">
+    <h1 class="hero-header" data-aos="fade-in" data-aos-duration="1000">
       Find Your Dream Home
     </h1>
     <div class="row mt-3">
-      <div class="input-group mb-3 search-form">
+      <div class="input-group mb-3 search-form" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">
         <input type="text" class="form-control" placeholder="Enter a location..." aria-label="Enter a location..." aria-describedby="location-search">
         <div class="input-group-append">
           <button class="btn btn-outline-light" type="button" id="location-search">
@@ -47,10 +47,10 @@
   <!-- Featured Properties -->
   <div class="container-fluid">
     <section class="featured">
-      <h1 class="featured-header my-5">
+      <h1 class="featured-header mt-5 mb-3" data-aos="fade-right">
         Top Properties
       </h1>
-      <div class="row card-row card-row-1 my-4">
+      <div class="row card-row card-row-1 my-4" data-aos="fade-left">
         <div class="featured-card featured-card-1 mx-3">
           <div class="featured-card-info">
             <p class="featured-card-city">
@@ -143,10 +143,10 @@
           <i class="fas fa-chevron-circle-right fa-3x arrow-right"></i>
         </a>
       </div>
-      <h1 class="featured-header my-5">
+      <h1 class="featured-header mt-5 mb-3" data-aos="fade-right">
         Top Agents
       </h1>
-      <div class="card-row card-row-2 my-4">
+      <div class="card-row card-row-2 my-4" data-aos="fade-left">
         <div class="featured-card featured-card-7 mx-3">
           <div class="featured-card-info">
             <p class="featured-card-city">
@@ -228,6 +228,10 @@
     </section>
   </div>
 
+  <footer class="footer">
+    <p class="footer-text">Copyright Alias 2018 | All Rights Reserved</p>
+  </footer>
+
 <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -236,7 +240,9 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="scripts.js"></script>
 <script>
-  AOS.init();
+  AOS.init({
+    disable: 'mobile'
+  });
 </script>
 
 </body>
